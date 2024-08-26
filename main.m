@@ -18,10 +18,6 @@
 %       方向5：time方向
 %       方向6：道集方向（offset）
 %==========================================================================
-%% 地震数据裁剪与读取
-%data_cut_23_10
-%% 层位数据的裁剪与读取
-% layer_data_cut10_27
 %% ------------------------------------------------- 参数设定----------------------------------------------------------
 %% 叠前、叠后参数选择
 %输入数据的类型
@@ -42,7 +38,6 @@ Type.offSets_type='Auto';
 starttime=clock;%开始计时
 
 %输入地震数据的格式为：无头文件的纯数据二进制sgy文件，顺序为inline*xline*time
-% FoldPath.DataPath='E:\神经网络与纹理属性\Condata3d\平层数据\';
 FoldPath.DataPath='E:\数据\qiulin\';
 
 %输出数据的路径:
@@ -105,7 +100,7 @@ Parameter.LayerTimeNum_down=20;%目标层向下选取点数
 
 %需要计算的纹理数量及名称
 Parameter.numHarFeature=13;        %纹理特征数量
-Parameter.textures= {'Energy' ,'Entropy', 'Corre','Contrast' ,'Homo','Variance' ,'SumMean'   ,'Inertia' ,'ClShade','ClTendency','InVariance'  ,'Dissimilarity' ,'MaxProbability' };%,'Variance' ,'SumMean'   ,'Inertia' ,'ClShade','ClTendency','InVariance'  ,'Dissimilarity' ,'MaxProbability' };%对应的纹理特征名称
+Parameter.textures= {'Energy' ,'Entropy', 'Contrast' ,'Homo'};
 % {'Energy' ,'Entropy', 'Corre','Contrast' ,'Homo','Variance' ,'SumMean'   ,'Inertia' ,'ClShade','ClTendency','InVariance'  ,'Dissimilarity' ,'MaxProbability' };
 %可供选择的纹理属性类型及名称，注意严格区分大小写
 % Energy Entropy Corre Contrast Homo Variance SumMean Inertia ClShade
