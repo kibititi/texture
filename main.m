@@ -6,7 +6,7 @@
 %        3.extract_unit_data func： 计算灰度共生矩阵并提取纹理特征
 %        4.normed func：         归一化数据
 %输入：
-%data：sgy二进制文件
+%data：二进制文件（.sgy）
 %输出：
 %featureVector：数据体的纹理属性向量
 % 输出数据的是按照纹理属性统计方向来区分的六个方向的n种纹理属性数据体
